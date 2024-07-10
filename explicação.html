@@ -1,0 +1,56 @@
+<!--
+
+Não, popupInfo não é o nome da arrow function. Vamos detalhar para esclarecer:
+
+Código:
+
+        const startBtn = document.querySelector('.start-btn');
+        const popupInfo = document.querySelector('.popup-info'); 
+
+        startBtn.onclick = () => {
+            popupInfo.classList.add('active');
+        }
+
+Explicação:
+
+1 - Constantes:
+> startBtn: Armazena o botão com a classe start-btn.
+> popupInfo: Armazena o elemento com a classe popup-info.
+
+
+2 - Arrow Function:
+> startBtn.onclick = () => { ... }:
+> startBtn.onclick: Especifica que algo acontecerá quando startBtn for clicado.
+> () => { ... }: É uma função que será executada quando o clique acontecer.
+
+
+>>> FUNÇÃO DE SETA (Arrow Function):
+> () => { ... }:
+> Isto é uma função sem nome (anônima).
+> Não tem parâmetros (os parênteses () estão vazios).
+> O código dentro das chaves { ... } será executado quando a função for chamada.
+
+
+>>> DETALHAMENTO DA FUNÇÃO:
+> popupInfo.classList.add('active');:
+> Este é o código dentro da função.
+> popupInfo: Refere-se à constante que armazena o elemento com a classe popup-info.
+> classList.add('active'): Adiciona a classe active ao elemento popupInfo.
+
+
+>>> RESUMO:
+> popupInfo é uma constante que armazena um elemento HTML.
+> A arrow function (() => { ... }) é atribuída ao evento de clique (onclick) do startBtn.
+> Quando startBtn é clicado, a função adiciona a classe active ao elemento armazenado em popupInfo.
+> Então, popupInfo não é o nome da função. É simplesmente uma constante que representa um elemento HTML que a função irá manipular quando o botão startBtn for clicado.
+
+
+
+
+
+
+
+
+
+
+-->
